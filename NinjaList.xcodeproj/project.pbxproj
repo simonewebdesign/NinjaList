@@ -14,6 +14,8 @@
 		BB3C3D091C36CDCA001E6B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3C3D071C36CDCA001E6B81 /* LaunchScreen.storyboard */; };
 		BB3C3D141C36CDCA001E6B81 /* NinjaListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C3D131C36CDCA001E6B81 /* NinjaListTests.swift */; };
 		BB3C3D1F1C36CDCA001E6B81 /* NinjaListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C3D1E1C36CDCA001E6B81 /* NinjaListUITests.swift */; };
+		BB3C3D2D1C36D932001E6B81 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB3C3D2C1C36D932001E6B81 /* CustomCell.xib */; };
+		BB3C3D311C36DB01001E6B81 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C3D301C36DB01001E6B81 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BB3C3D1A1C36CDCA001E6B81 /* NinjaListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinjaListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3C3D1E1C36CDCA001E6B81 /* NinjaListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaListUITests.swift; sourceTree = "<group>"; };
 		BB3C3D201C36CDCA001E6B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB3C3D2C1C36D932001E6B81 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		BB3C3D301C36DB01001E6B81 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				BB3C3CFE1C36CDCA001E6B81 /* AppDelegate.swift */,
 				BB3C3D001C36CDCA001E6B81 /* ViewController.swift */,
 				BB3C3D021C36CDCA001E6B81 /* Main.storyboard */,
+				BB3C3D2C1C36D932001E6B81 /* CustomCell.xib */,
 				BB3C3D051C36CDCA001E6B81 /* Assets.xcassets */,
 				BB3C3D071C36CDCA001E6B81 /* LaunchScreen.storyboard */,
 				BB3C3D0A1C36CDCA001E6B81 /* Info.plist */,
+				BB3C3D301C36DB01001E6B81 /* CustomTableViewCell.swift */,
 			);
 			path = NinjaList;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			files = (
 				BB3C3D091C36CDCA001E6B81 /* LaunchScreen.storyboard in Resources */,
 				BB3C3D061C36CDCA001E6B81 /* Assets.xcassets in Resources */,
+				BB3C3D2D1C36D932001E6B81 /* CustomCell.xib in Resources */,
 				BB3C3D041C36CDCA001E6B81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3C3D311C36DB01001E6B81 /* CustomTableViewCell.swift in Sources */,
 				BB3C3D011C36CDCA001E6B81 /* ViewController.swift in Sources */,
 				BB3C3CFF1C36CDCA001E6B81 /* AppDelegate.swift in Sources */,
 			);

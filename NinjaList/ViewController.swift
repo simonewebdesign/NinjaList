@@ -19,19 +19,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func btnAddPressed(sender: AnyObject) {
+    }
+    
+    // MARK: UITableViewDatasource/ UITableViewDelegate
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
-        cell.textLabel?.text = tasks[indexPath.row]
-        return cell
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as? CustomTableViewCell
+        
+        if cell == nil {
+            tableView.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "cell")
+            cell = tableView.dequeueReusableCellWithIdentifier("cell") as? CustomTableViewCell
+        }
+        
+        cell!.txt.text = tasks[indexPath.row]
+        return cell!
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
 
