@@ -103,15 +103,13 @@
 		BB3C3CFD1C36CDCA001E6B81 /* NinjaList */ = {
 			isa = PBXGroup;
 			children = (
+				BB62C02C1C8336F90093B968 /* CustomViews */,
+				BB62C02B1C8336E10093B968 /* Viewcontrollers */,
 				BB3C3CFE1C36CDCA001E6B81 /* AppDelegate.swift */,
-				BB3C3D001C36CDCA001E6B81 /* TodoListViewController.swift */,
 				BB3C3D021C36CDCA001E6B81 /* Main.storyboard */,
-				BB3C3D2C1C36D932001E6B81 /* CustomCell.xib */,
 				BB3C3D051C36CDCA001E6B81 /* Assets.xcassets */,
 				BB3C3D071C36CDCA001E6B81 /* LaunchScreen.storyboard */,
 				BB3C3D0A1C36CDCA001E6B81 /* Info.plist */,
-				BB3C3D301C36DB01001E6B81 /* CustomTableViewCell.swift */,
-				BB62C0291C8335960093B968 /* InputViewController.swift */,
 			);
 			path = NinjaList;
 			sourceTree = "<group>";
@@ -132,6 +130,24 @@
 				BB3C3D201C36CDCA001E6B81 /* Info.plist */,
 			);
 			path = NinjaListUITests;
+			sourceTree = "<group>";
+		};
+		BB62C02B1C8336E10093B968 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				BB3C3D001C36CDCA001E6B81 /* TodoListViewController.swift */,
+				BB62C0291C8335960093B968 /* InputViewController.swift */,
+			);
+			name = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		BB62C02C1C8336F90093B968 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				BB3C3D301C36DB01001E6B81 /* CustomTableViewCell.swift */,
+				BB3C3D2C1C36D932001E6B81 /* CustomCell.xib */,
+			);
+			name = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
