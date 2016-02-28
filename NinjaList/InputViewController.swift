@@ -10,12 +10,14 @@ import UIKit
 
 class InputViewController: UIViewController {
     @IBOutlet weak var txtInputField: UITextField!
+    var taskName:String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // to focus the input field and open the keyboard
         txtInputField.becomeFirstResponder()
+        txtInputField.text = taskName
     }
 
     override func didReceiveMemoryWarning() {

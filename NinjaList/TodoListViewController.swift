@@ -12,6 +12,7 @@ class TodoListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var tableView: UITableView!
     var tasks:Array<String>!
+    var selectedTask:String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,6 @@ class TodoListViewController: UIViewController, UITableViewDataSource, UITableVi
             tableView.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "cell")
             cell = tableView.dequeueReusableCellWithIdentifier("cell") as? CustomTableViewCell
         }
-        cell?.userInteractionEnabled = false
         cell!.label.text = tasks[indexPath.row]
         return cell!
     }
@@ -45,8 +45,19 @@ class TodoListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        selectedTask = tasks[indexPath.row]
+        performSegueWithIdentifier("modifyItem", sender: self)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "modifyItem" {
+            let vc = segue.destinationViewController as! InputViewController
+            vc.taskName = selectedTask
+        }
+        else if segue.identifier == "addItem" {
+            let vc = segue.destinationViewController as! InputViewController
+            vc.taskName = ""
+        }
+    }
 }
 
