@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB3C3CFF1C36CDCA001E6B81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C3CFE1C36CDCA001E6B81 /* AppDelegate.swift */; };
-		BB3C3D011C36CDCA001E6B81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C3D001C36CDCA001E6B81 /* ViewController.swift */; };
+		BB3C3D011C36CDCA001E6B81 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C3D001C36CDCA001E6B81 /* TodoListViewController.swift */; };
 		BB3C3D041C36CDCA001E6B81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3C3D021C36CDCA001E6B81 /* Main.storyboard */; };
 		BB3C3D061C36CDCA001E6B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3C3D051C36CDCA001E6B81 /* Assets.xcassets */; };
 		BB3C3D091C36CDCA001E6B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3C3D071C36CDCA001E6B81 /* LaunchScreen.storyboard */; };
@@ -16,6 +16,7 @@
 		BB3C3D1F1C36CDCA001E6B81 /* NinjaListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C3D1E1C36CDCA001E6B81 /* NinjaListUITests.swift */; };
 		BB3C3D2D1C36D932001E6B81 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB3C3D2C1C36D932001E6B81 /* CustomCell.xib */; };
 		BB3C3D311C36DB01001E6B81 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C3D301C36DB01001E6B81 /* CustomTableViewCell.swift */; };
+		BB62C02A1C8335960093B968 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62C0291C8335960093B968 /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		BB3C3CFB1C36CDCA001E6B81 /* NinjaList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3C3CFE1C36CDCA001E6B81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB3C3D001C36CDCA001E6B81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB3C3D001C36CDCA001E6B81 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		BB3C3D031C36CDCA001E6B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB3C3D051C36CDCA001E6B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB3C3D081C36CDCA001E6B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		BB3C3D201C36CDCA001E6B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB3C3D2C1C36D932001E6B81 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		BB3C3D301C36DB01001E6B81 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		BB62C0291C8335960093B968 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				BB3C3CFE1C36CDCA001E6B81 /* AppDelegate.swift */,
-				BB3C3D001C36CDCA001E6B81 /* ViewController.swift */,
+				BB3C3D001C36CDCA001E6B81 /* TodoListViewController.swift */,
 				BB3C3D021C36CDCA001E6B81 /* Main.storyboard */,
 				BB3C3D2C1C36D932001E6B81 /* CustomCell.xib */,
 				BB3C3D051C36CDCA001E6B81 /* Assets.xcassets */,
 				BB3C3D071C36CDCA001E6B81 /* LaunchScreen.storyboard */,
 				BB3C3D0A1C36CDCA001E6B81 /* Info.plist */,
 				BB3C3D301C36DB01001E6B81 /* CustomTableViewCell.swift */,
+				BB62C0291C8335960093B968 /* InputViewController.swift */,
 			);
 			path = NinjaList;
 			sourceTree = "<group>";
@@ -264,8 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3C3D311C36DB01001E6B81 /* CustomTableViewCell.swift in Sources */,
-				BB3C3D011C36CDCA001E6B81 /* ViewController.swift in Sources */,
+				BB3C3D011C36CDCA001E6B81 /* TodoListViewController.swift in Sources */,
 				BB3C3CFF1C36CDCA001E6B81 /* AppDelegate.swift in Sources */,
+				BB62C02A1C8335960093B968 /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +496,7 @@
 				BB3C3D251C36CDCA001E6B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB3C3D261C36CDCA001E6B81 /* Build configuration list for PBXNativeTarget "NinjaListTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				BB3C3D281C36CDCA001E6B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB3C3D291C36CDCA001E6B81 /* Build configuration list for PBXNativeTarget "NinjaListUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +514,7 @@
 				BB3C3D2B1C36CDCA001E6B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

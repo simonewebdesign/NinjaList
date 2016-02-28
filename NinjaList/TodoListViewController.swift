@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TodoListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     var tasks:Array<String>!
@@ -35,13 +35,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             tableView.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "cell")
             cell = tableView.dequeueReusableCellWithIdentifier("cell") as? CustomTableViewCell
         }
-        
-        cell!.txt.text = tasks[indexPath.row]
+        cell?.userInteractionEnabled = false
+        cell!.label.text = tasks[indexPath.row]
         return cell!
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
     }
 
 }
